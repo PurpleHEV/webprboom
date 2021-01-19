@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.efced428.chunk.css",
+    "main.js": "/static/js/main.df8ec44c.chunk.js",
+    "main.js.map": "/static/js/main.df8ec44c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ab9dd63c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ab9dd63c.js.map",
+    "static/js/2.c1118af7.chunk.js": "/static/js/2.c1118af7.chunk.js",
+    "static/js/2.c1118af7.chunk.js.map": "/static/js/2.c1118af7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.efced428.chunk.css.map": "/static/css/main.efced428.chunk.css.map",
+    "static/js/2.c1118af7.chunk.js.LICENSE.txt": "/static/js/2.c1118af7.chunk.js.LICENSE.txt",
+    "static/media/doom1.3a7142d0.png": "/static/media/doom1.3a7142d0.png",
+    "static/media/freedoom1.e84d08bc.png": "/static/media/freedoom1.e84d08bc.png",
+    "static/media/freedoom2.ffa285ce.png": "/static/media/freedoom2.ffa285ce.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab9dd63c.js",
+    "static/js/2.c1118af7.chunk.js",
+    "static/css/main.efced428.chunk.css",
+    "static/js/main.df8ec44c.chunk.js"
+  ]
+}
