@@ -969,7 +969,8 @@ void M_LoadDefaults (void)
     defaultfile = myargv[i+1];
   else {
     //const char* exedir = I_DoomExeDir();
-    const char* exedir = "/idxdb/" GAME;        
+    //const char* exedir = "/idxdb/" GAME;        
+    const char* exedir = "/save/";        
 
     defaultfile = malloc(PATH_MAX+1);
     /* get config file from same directory as executable */

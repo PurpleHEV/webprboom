@@ -782,7 +782,8 @@ static void IdentifyVersion (void)
     // CPhipps - use DOOMSAVEDIR if defined
     //char* p = getenv("DOOMSAVEDIR");
     // emscripten
-    char* p = "/idxdb/" GAME;
+    //char* p = "/idxdb/" GAME;
+    char* p = "/save";
 
     if (p != NULL)
       if (strlen(p) > PATH_MAX-12) p = NULL;
