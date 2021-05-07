@@ -4141,8 +4141,7 @@ boolean M_Responder (event_t* ev) {
 
     if (!menuactive && (
         (!usergame && ev->type == ev_joystick && ev->data1 && !waitForButtonRelease) ||
-        ((ev->data1 & 0xc0 ) && ((ev->data1 & 0xc00 ) == 0xc00)) || // R or L trigger + right and left analog buttons
-        ((ev->data1 & 0x300 ) == 0x300) // Start + Select
+        ((ev->data1 & 0xc0 ) && (ev->data1 & 0xf00)) // (rtrig/ltrig) + (ranalog/lanalog/start/select)
       )) {          
       M_StartControlPanel();
       S_StartSound(NULL, sfx_swtchn);
