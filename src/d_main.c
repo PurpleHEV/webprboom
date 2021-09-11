@@ -385,7 +385,8 @@ static void D_DoomLoopIteration(void)
 static void D_DoomLoop(void)
 {
     // emscripten build: call `D_DoomLoop` with `emscripten_set_main_loop`
-    emscripten_set_main_loop(D_DoomLoopIteration, 0, 1);
+    lprintf(LO_INFO,"Running emscripten loop at 60 FPS.\n");
+    emscripten_set_main_loop(D_DoomLoopIteration, 60 /* 60fps */, 1);
 }
 
 //
