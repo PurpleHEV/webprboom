@@ -153,7 +153,6 @@ static int I_TranslateKey(SDL_keysym* key)
   }
 
   return rc;
-
 }
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -171,10 +170,12 @@ static int I_SDLtoDoomMouseState(Uint8 buttonstate)
 static void I_GetEvent(SDL_Event *Event)
 {
   event_t event;
-
+ 
   switch (Event->type) {
+#if 0     
   case SDL_KEYDOWN:
     event.type = ev_keydown;
+    // lprintf(LO_INFO, "SDL_KEYDOWN:%d\n", Event->key.keysym.sym);
     event.data1 = I_TranslateKey(&Event->key.keysym);
     D_PostEvent(&event);
     break;
@@ -186,6 +187,7 @@ static void I_GetEvent(SDL_Event *Event)
     D_PostEvent(&event);
   }
   break;
+#endif  
 
   case SDL_MOUSEBUTTONDOWN:
   case SDL_MOUSEBUTTONUP:
